@@ -1,0 +1,8 @@
+class Solution(object):
+    def maximumWealth(self, accounts):
+        max_wealth=0
+        for customer in accounts:
+            tot=sum(customer)
+            if tot> max_wealth:
+                max_wealth=tot
+        return max_wealth
